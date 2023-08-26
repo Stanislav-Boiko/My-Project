@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 70px;
+}
+
+ul {
+    list-style: none;
+    padding-top: 25px;
+}
+
+li {
+    display:inline-block;
+    margin: 0 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+}
+
+.menu {
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 26px 0;
+}
+
+
+.menu {
+    color: #F00;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.title {
+    text-align: center;
+    height: 50px;
+    margin-top: 40px;
+}
+
+
+h2 {
+    color: #373737;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.3px;
+    text-transform: uppercase;
+}
+
+.text,
+.text-item {
+    width: 1145px;
+    color: #373737;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    margin: 0 auto;
+}
+
+.text {
+    width: 1145px;
+    height: 132px;
+    flex-shrink: 0;
+}
+
+.text-item {
+    width: 1145px;
+    height: 216px;
+    flex-shrink: 0; 
+}
+
+.button {
+    padding-top: 35px;
+}
+
+button {
+    display: flex;
+    width: 105px;
+    height: 16px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+button {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+button {
+    width: 191px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #F00;
+    margin: auto;
+}
+
+strong {
+    margin: auto;
+}
+
+.footer {
+    display: inline-flex;
+    height: 40px;
+    width: 1070px;
+    padding-left: 0px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-shrink: 0;
+    margin: 82px 105px 30px 105px;
+}
+
+.footer-text {
+    display: flex;
+    width: 462px;
+    height: 39px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-text {
+    color: #373737;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
