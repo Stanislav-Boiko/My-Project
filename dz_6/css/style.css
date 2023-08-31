@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/baner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.logo__vrap {
+    display: flex;
+}
+
+.logo__vrap__link {
+    display: flex;
+}
+
+.logo__title {
+    display: block;
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.logo__vrap:hover .logo__img{
+    content: url("../img/logo_1_hover.svg");
+}
+
+.logo__vrap__link:hover .logo__title{
+    color: #F26522;
+}
+
+
+a h1 {
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+a h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-top: 3px;
+}
+
+.imail_vrap {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 15px
+}
+
+.email__item,
+.phone__item {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.email__item:hover,
+.phone__item:hover {
+    color: #F26522;
+}
+
+
+
+/* MAIN */
+
+.main {
+    margin-top: 25px;
+} 
+
+.main__wrap {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 38px;
+}
+
+.main__wrap__text {
+    max-width: 303px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 20px;
+}
+
+
+.main__wrap__link {
+	position: relative;
+    z-index: 0;
+}
+
+.info {
+	display: none;
+}
+
+.main__wrap__item:hover .info {
+	position: absolute;
+	display: flex;
+	width: 300px;
+	height: 55px;
+	background-color: #F26522;
+	bottom: 44px;
+	left: 2px;
+	z-index: 1;
+}
+
+.card__2:hover .info {
+    left: 4px; 
+}
+
+.card__6:hover .info {
+    left: 1px; 
+}
+
+
+.info__text {
+    color: #FFF;
+	font-weight: 400;
+	margin-left: 16px;
+	margin-top: 7px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.info__first {
+	font-size: 10px;
+}
+
+.price {
+	font-size: 20px;
+	margin-top: 8px;
+}
+
+.details {
+    margin-top: 32px;
+    margin-left: 128px;
+    font-size: 16px;
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+}   
+
+.details::after {
+	content: url(../img/Vector\ 1.svg);
+	margin-left: 16px;
+}
+
+.main__wrap a:hover .main__wrap__text {
+	color: #F26522;
+}
+
+
+/* FOOTER */ 
+
+.footer {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
