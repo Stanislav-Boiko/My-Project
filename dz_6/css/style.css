@@ -50,7 +50,6 @@ body {
     color: #F26522;
 }
 
-
 a h1 {
     font-size: 29px;
     font-weight: 700;
@@ -86,8 +85,6 @@ a h2 {
     color: #F26522;
 }
 
-
-
 /* MAIN */
 
 .main {
@@ -113,7 +110,6 @@ a h2 {
     line-height: 18px;
     padding-top: 20px;
 }
-
 
 .main__wrap__link {
 	position: relative;
@@ -142,7 +138,6 @@ a h2 {
 .card__6:hover .info {
     left: 1px; 
 }
-
 
 .info__text {
     color: #FFF;
