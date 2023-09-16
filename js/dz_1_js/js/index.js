@@ -1,5 +1,5 @@
-const admin = "stanislav";
 const name = "stanislav";
+let admin = name;
 
 console.log( admin );
 
