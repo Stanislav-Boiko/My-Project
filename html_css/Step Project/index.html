@@ -5,25 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Step Project</title>
-    <link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Quicksand:wght@500;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .btn {
+         display: inline-block;
+         background: #0F8277;
+         color: #fff;
+         padding: 10px 12px;
+         text-decoration: none;
+         border-radius: 4px;
+         color: #EEE;
+        font-family: Quicksand;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        }
+       </style>
+
 </head>
 <body class="body">
-    <div class="">
-        <ul>
+    <div class="header">
+
+        <ul class="nav">
+            
             <li>
-                <ul>
-                    <li>e-Tutoria</li>
-                    <li><button>Explore</button></li>
-                    <li>What do you want to learn?</li>
+                <ul class="nav_left">
+                    <li class="title">e-Tutoria</li>
+                    <li><span class="btn">Explore<img class="button_wrap" src="img/Frame 1.svg"></span></li>
+                    <li class="search-form">
+
+                        <input class="search-form_text" type="text" placeholder="What do you want to learn?">
+                        <button class="search-form_btn"><img class="search-form_img" src="img/Group.svg" alt="image"></button>
+                        
+                    </li>
                 </ul>
             </li>
+
             <li>
-                <ul>
-                    <li>Courses</li>
-                    <li>Corporate training</li>
-                    <li>Log in</li>
-                    <li>Sign up</li>
-            </ul></li>
+                <ul class="nav_right">
+                    <li class="nav_right_item courses">Courses</li>
+                    <li class="nav_right_item">Corporate training</li>
+                    <li><a  class="log-in" href="#">Log in</a></li>
+                    <li><a href="#" class="btn">Sign up</a></li>
+                </ul>
+            </li>
+
         </ul>
 
 
