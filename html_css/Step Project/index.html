@@ -5,29 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Step Project</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Quicksand:wght@500;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         .btn {
-         display: inline-block;
-         background: #0F8277;
-         color: #fff;
-         padding: 10px 12px;
-         text-decoration: none;
-         border-radius: 4px;
-         color: #EEE;
-        font-family: Quicksand;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 120%;
+            display: inline-block;
+            background: #0F8277;
+            padding: 10px 12px;
+            border-radius: 4px;
+            color: #EEE;
+            font-family: Quicksand;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+        }
+
+        .button {
+            color: #0F8277;
+            padding: 8px 12px;
+            font-family: Quicksand;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            border-radius: 4px;
+            border: 2px solid #0F8277;
         }
        </style>
 
 </head>
+
 <body class="body">
+
+        <!-- Header -->
+
     <div class="header">
 
         <ul class="nav">
@@ -35,7 +50,9 @@
             <li>
                 <ul class="nav_left">
                     <li><a href="#" class="title">e-Tutoria</a></li>
+
                     <li><span class="btn">Explore<img class="button_wrap" src="img/Frame 1.svg"></span></li>
+                    
                     <li class="search-form">
 
                         <input class="search-form_text" type="text" placeholder="What do you want to learn?">
@@ -47,14 +64,32 @@
 
             <li>
                 <ul class="nav_right">
-                    <li class="nav_right_item courses">Courses</li>
-                    <li class="nav_right_item">Corporate training</li>
+                    <li><a href="#" class="nav_right_item courses">Courses</a></li>
+                    <li><a href="#" class="nav_right_item">Corporate training</a></li>
                     <li><a  class="log-in" href="#">Log in</a></li>
                     <li><a href="#" class="btn">Sign up</a></li>
                 </ul>
             </li>
 
         </ul>
+
+        <!-- Baner -->
+
+        <div class="baner">
+            <div class="baner_text">
+
+                <h1>Learn comfortably</h1>
+                <p class="baner_p">Unlimited access to 700+ courses, hands-on projects, and certifications in job-critical skills in one subscription</p>
+                
+                <a href="#" class="btn baner_btn">Start learning</a>
+                <a href="#" class="button">Learn more</a>
+                
+            </div>
+
+            
+            <img src="img/hero-img.png" alt="image" class="baner_photo">
+            
+        </div>
 
 
 

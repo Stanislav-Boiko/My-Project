@@ -14,9 +14,11 @@ li {
 
 .body {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
+    margin: 10px auto;
+    padding: 0;
 }
+
+/*  Header  */
 
 .nav, .nav_left, .nav_right {
     display: flex;
@@ -57,9 +59,9 @@ li {
 
 .search-form {
     display: flex;
-    width: 300px;
-    padding-left: 12px;
     justify-content: space-between;
+    width: 330px;
+    padding-left: 12px;
     align-items: center;
     height: 36px;
     border: 1px solid #5C5C5C;
@@ -68,6 +70,7 @@ li {
 }
 
 .search-form_text {
+    width: 100%;
     border: none;
     outline: none;
     color: #5C5C5C;
@@ -77,16 +80,15 @@ li {
 }
 
 .search-form_btn {
+    display: flex;
     border: none;
     background: #0F8277;
     border-radius: 0 3px 3px 0;
     border-left: 1px solid #5C5C5C;
+    margin-left: 12px;
 }
 
 .search-form_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 9px;
 }
 
@@ -112,4 +114,49 @@ li {
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+}
+
+/*  Baner */
+
+h1 {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.baner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 600px;
+    background: #DBF3ED;
+    border-radius: 12px;
+}
+
+.baner_text {
+    margin-left: 100px;
+}
+
+.baner_p {
+    width: 482px;
+    color: #000;
+    font-family: Quicksand;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 32px 0;
+}
+
+.baner_btn {
+    margin-right: 24px;
+}
+
+.baner_photo {
+    width: 530px;
+    height: 530px;
+    margin-right: 40px;
 }
