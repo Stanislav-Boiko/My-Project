@@ -15,10 +15,12 @@ li {
 .body {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
+
 /*  Header  */
+
 
 .nav, .nav_left, .nav_right {
     display: flex;
@@ -115,7 +117,9 @@ li {
     line-height: 120%;
 }
 
+
 /*  Baner */
+
 
 h1 {
     color: #000;
@@ -124,6 +128,35 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+}
+
+h2 {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h3 {
+    color: #0F8277;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 12px;
+}
+
+.paragraph_standart {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin-top: 12px;
 }
 
 .baner {
@@ -159,4 +192,143 @@ h1 {
     width: 530px;
     height: 530px;
     margin-right: 40px;
+}
+
+
+/* MAIN */
+
+
+.main {
+    margin-bottom: 76px;
+}
+
+
+/* Academic training */
+
+
+.academic {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.card {
+    width: 380.5px;
+    height: 480px;
+    border-radius: 8px;
+    border: 1px solid #DADADA;
+}
+
+.card_img {
+    width: 378.5px;
+    height: 270px;
+    border-radius: 7px 7px 0 0;
+}
+
+.academic_card_items {
+    padding: 24px 16px;
+    position: relative;
+}
+
+.card_title {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.logo_item {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin-left: 12px;
+}
+
+.card_text {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.diploma {
+    display: flex;
+    position: absolute;
+    top: 170px;
+}
+
+.diploma_text {
+    color: #0F8277;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    padding-left: 12px;
+}
+
+
+/* Popular courses on our platform */
+
+
+.popular {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.card_item {
+    width: 279.5px;
+    height: 480px;
+    border-radius: 8px;
+    border: 1px solid #DADADA;
+}
+
+.card_img_item {
+    width: 277.5px;
+    height: 270px;
+    border-radius: 7px 7px 0 0;
+}
+
+.diploma_text_item {
+    position: absolute;
+    top: 170px;
+    color: #0F8277;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
+/* More courses */
+
+
+.more_arrow {
+    width: 170px;
+    margin: 40px auto 84px auto;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.more {
+    color: #0F8277;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%
 }
