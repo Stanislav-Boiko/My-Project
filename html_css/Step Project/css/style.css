@@ -199,10 +199,6 @@ h3 {
 /* MAIN */
 
 
-.main {
-    margin-bottom: 76px;
-}
-
 
 /* Academic training */
 
@@ -478,5 +474,213 @@ h3 {
 }
 
 .price_variant {
+    display: flex;
     margin-top: 40px;
+    gap: 24px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 700px;
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid #0F8277;
+}
+
+.plan-min {
+    background: #FDFDFD;
+}
+
+.plan-normal {
+    background: #0F8277;
+}
+
+.plan-full {
+    background: #FDFDFD;
+}
+
+.plan_title {
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.plan-normal_title{
+    color: #FFF;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.plan_text {
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 26px 0;
+}
+
+.plan-normal_text{
+    color: #FFF;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin: 26px 0;
+    }
+
+.plan-min_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 76px;
+}
+
+.plan-normal_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.plan-normal-price {
+    color: #FFF;
+}
+
+.plan-full_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 46px;
+}
+
+.mo_text {
+    text-transform: uppercase;
+}
+
+.plan-normal_button {
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+
+.pseudo {
+    width: 100%;
+    height: 0;
+    border-radius: 1px;
+    border: 1px solid #0F8277;
+    margin: 48px 0;
+}
+
+.plan-normal_pseudo {
+    width: 100%;
+    height: 0;
+    border-radius: 1px;
+    border: 1px solid #FFF;
+    margin: 48px 0;
+}
+
+.variant_item_text {
+    display: flex;
+    width: 278px;
+    color: #000;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.variant_item_text::before {
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    content:url(/img/Vector\ 2.svg);
+    width: 16px;
+    height: 16px;
+    background: #0F8277;
+    border-radius: 50%;
+}
+
+.variant-normal_item_text {
+    display: flex;
+    width: 278px;
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.variant-normal_item_text::before {
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    content:url(/img/Vector\ 2_green.svg);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #0F8277;
+}
+
+
+/* Photos of our students */
+
+
+.photos {
+    margin: 80px 12px 76px 12px;
+}
+
+.photos_text {
+    text-align: center;
+}
+
+/* GRID */
+
+.photos_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 282.5px);
+    grid-template-rows: repeat(5, 195px);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.photos_standart {
+    width: 282.5px;
+    height: 195px;
+}
+
+.student_9 {
+    width: 585px;
+    height: 410px;
+}
+
+.student_9 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
 }
