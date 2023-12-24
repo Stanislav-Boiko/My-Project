@@ -12,10 +12,76 @@ li {
     list-style: none;
 }
 
-.body {
+.body_container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 5px;
+}
+
+
+
+.btn {
+    display: inline-block;
+    background: #0F8277;
+    padding: 10px 12px;
+    border-radius: 4px;
+    color: #EEE;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    border: none;
+}
+
+.button {
+    color: #0F8277;
+    padding: 8px 12px;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    border-radius: 4px;
+    border: 2px solid #0F8277;
+}
+
+h1 {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h2 {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h3 {
+    color: #0F8277;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 12px;
+}
+
+.paragraph_standart {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    margin-top: 12px;
 }
 
 
@@ -120,44 +186,6 @@ li {
 
 /*  Baner */
 
-
-h1 {
-    color: #000;
-    font-family: Quicksand;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-}
-
-h2 {
-    color: #000;
-    font-family: Quicksand;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-}
-
-h3 {
-    color: #0F8277;
-    font-family: Quicksand;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    margin-bottom: 12px;
-}
-
-.paragraph_standart {
-    color: #000;
-    font-family: Quicksand;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-    margin-top: 12px;
-}
 
 .baner {
     display: flex;
@@ -307,25 +335,28 @@ h3 {
 
 
 .more_arrow {
+    display: block;
     width: 170px;
-    margin: 40px auto 84px auto;
+    margin: 42px auto 84px auto;
+    text-align: center;
 }
 
-.arrow {
+.more_arrow_text {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 16px;
-    align-self: stretch;
-}
-
-.more {
     color: #0F8277;
     font-family: Quicksand;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%
+    line-height: 120%;
+}
+
+.more_arrow_text::after {
+    content: url(/img/arrow.svg);
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
 }
 
 
@@ -343,6 +374,7 @@ h3 {
 }
 
 .category_items {
+    display: block;
     color: #0F8277;
     font-family: Quicksand;
     font-size: 20px;
