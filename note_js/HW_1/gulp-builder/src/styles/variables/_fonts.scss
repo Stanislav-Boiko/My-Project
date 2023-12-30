@@ -1,0 +1,41 @@
+.text--white-normal {
+    color: #F8FDFE;
+    font-family: Cabin;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text--black-normal {
+    color: #000;
+    font-family: Cabin;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text--black-boold {
+    overflow: hidden;
+    color: #1F1F1F;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Cabin;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.text--grey-normal {
+    overflow: hidden;
+    color:  #8E8E8E;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Cabin;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
