@@ -1,0 +1,25 @@
+.chat__background {
+    position: fixed;
+    right: 28px;
+    bottom: 200px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #10BBD5;
+    margin: 20px;
+    position: absolute;
+
+    
+    .chat__ikon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/src/images/icon.svg);
+        width: 52px;
+        height: 52px;
+    }
+    
+    &:hover {
+        transform: rotate(20deg);
+    }
+}

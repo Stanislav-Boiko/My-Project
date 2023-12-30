@@ -72,4 +72,5 @@ export const build = series(
 	cleanDistTaskHandler,
 	parallel(htmlTaskHandler, cssTaskHandler, fontTaskHandler, imagesTaskHandler)
 );
-export const dev = series(build, browserSyncTaskHandler);
+// export const dev = series(build, browserSyncTaskHandler);
+export const dev = build;
