@@ -32,30 +32,31 @@
         }
     }
 
-    .cart {
+    .basket {
         height: 40px;
         gap: 8px;
         position: relative;
         display: flex;
         align-items: center;
 
-        .card-wraper {
+        .basket-icon {
             display: flex;
             align-items: center;
             flex-direction: column;
+            background-color: #10BBD5;
         
-            .cart-icon {
+            .basket-wraper {
                 display: flex;
                 margin-top: 3px;
                 margin-left: 3px;
                 gap: 4px;
-                background-color: #10BBD5;
                 
-                .cart-icon_number {
+                
+                .basket-icon_number {
                     position: absolute;
                     color: #000;
-                    top: 13px;
-                    right: 10px;
+                    top: 12px;
+                    right: 16px;
                     font-family: Cabin;
                     font-size: 12px;
                     font-style: normal;
@@ -63,7 +64,7 @@
                     line-height: 10px;
                 }
 
-                .cart-icon__items {
+                .basket-icon__items {
                     flex: none;
                     width: 9px;
                     height: 9px;
