@@ -28,7 +28,7 @@
     line-height: 28px;
 }
 
-.text--grey-normal {
+.card__text-author--grey-normal {
     overflow: hidden;
     color:  $text--color-grey;
     text-overflow: ellipsis;
@@ -47,4 +47,25 @@
     font-style: normal;
     font-weight: 600;
     line-height: 40px
+}
+
+.card-title__text {
+    overflow: hidden;
+    color: $card-title--color-black;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Cabin;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.product-price {
+    color: $price-new--color-red;
+    font-family: Cabin;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px
 }

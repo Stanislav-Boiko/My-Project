@@ -1,0 +1,28 @@
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .product-card {
+        padding: 32px;
+        width: 306px;
+        height: 512px;
+        margin-bottom: 32px;
+        border: 1px solid $border--color-grey;
+        background: #F8FDFE;
+
+        .product-card__img {
+            margin: 0 32px 16px 32px;
+            justify-content: center;
+        }
+
+        .card__text-author--grey-normal {
+            border-top: 1px solid $border--color-grey;
+        }
+
+        .product-price {
+            margin: 8px 0 16px 0;
+        }
+    }
+}
