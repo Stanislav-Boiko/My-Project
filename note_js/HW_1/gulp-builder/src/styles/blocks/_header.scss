@@ -51,6 +51,11 @@
                 margin-left: 3px;
                 gap: 4px;
                 
+                .basket-icon__items {
+                    flex: none;
+                    width: 9px;
+                    height: 9px;
+                }
                 
                 .basket-icon_number {
                     position: absolute;
@@ -62,12 +67,6 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 10px;
-                }
-
-                .basket-icon__items {
-                    flex: none;
-                    width: 9px;
-                    height: 9px;
                 }
             } 
         }   
