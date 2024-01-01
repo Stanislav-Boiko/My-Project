@@ -9,228 +9,315 @@
 		<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Quicksand:wght@500;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body class="body">
-		<header class="header">
-			
-			<menu class="header-menu">
-				<a href="#" class="logo">bookRead</a>
-				<div class="basket">
+		<div class="container">
 
-					<p class="text--white-normal">0,00 €</p>
+			<header class="header">
+				
+				<menu class="header-menu">
+					<a href="#" class="logo">bookRead</a>
+					<div class="basket">
 
-					<button type="button" class="basket-icon">
+						<p class="text--white-normal">0,00 €</p>
 
-						<img src="./images/Vector.svg" alt="basket-icon">
+						<button type="button" class="basket-icon">
 
-						<div class="basket-wraper">
-							<img class="basket-icon__items" src="./images/Vector (1).svg" alt="basket-icon">
+							<img src="./images/Vector.svg" alt="basket-icon">
 
-							<img class="basket-icon__items" src="./images/Vector (1).svg" alt="basket-icon">
-							<p class="basket-icon_number">0</p>
+							<div class="basket-wraper">
+								<img class="basket-icon__items" src="./images/Vector (1).svg" alt="basket-icon">
+
+								<img class="basket-icon__items" src="./images/Vector (1).svg" alt="basket-icon">
+								<p class="basket-icon_number">0</p>
+							</div>
+
+						</button>
+						
+					</div>
+				</menu>
+
+				<menu class="header-menu_item">
+					<p><a href="#" class="text--black-normal">Shop by category</a></p>
+					<ul class="nav-menu">
+						<li><a href="#" class="text--black-normal">Order Status</a></li>
+						<li><a href="#" class="text--black-normal">Wishlist</a></li>
+						<li><a href="#" class="text--black-normal">Sign in/Join</a></li>
+					</ul>
+				</menu>
+			</header>
+
+
+			<main class="main">
+				<h1 class="title">Bestsellers – our most popular items, updated daily</h1>
+
+				<div class="product">
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit">Hit</p>
+							<p class="badge badge-new d-none">New</p>
+							<p class="badge badge-sale d-none">10% off</p>
 						</div>
 
-					</button>
+						<a href="#">
+							<img class="product-card__img" src="./images/image.png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">Final Offer</p>
+						<p class="card__text-author--grey-normal">Lauren Asher</p>
+						
+						<p class="product__price-new">16,05 €<span class="product__price-old d-none">16,05 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
 					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit d-none">Hit</p>
+							<p class="badge badge-new">New</p>
+							<p class="badge badge-sale d-none">10% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (1).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">It Ends With Us: The most </p>
+						<p class="card__text-author--grey-normal">Colleen Hoover</p>
+
+						<p class="product__price-new">10,52 €<span class="product__price-old d-none">16,05 €</span></p>
+
+						<button type="button" class="btn btn-green"><span class="btn__text">End up</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit">Hit</p>
+							<p class="badge badge-new d-none">New</p>
+							<p class="badge badge-sale">10% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (2).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">Add to basket</p>
+						<p class="card__text-author--grey-normal">James Clear</p>
+
+						<p class="product__price-new">19,75 €<span class="product__price-old">22,00 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit d-none">Hit</p>
+							<p class="badge badge-new d-none">New</p>
+							<p class="badge badge-sale d-none">10% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (3).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">The Creative Act</p>
+						<p class="card__text-author--grey-normal">Rick Rubin</p>
+
+						<p class="product__price-new">29,45 €<span class="product__price-old d-none">29,45 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit">Hit</p>
+							<p class="badge badge-new d-none">New</p>
+							<p class="badge badge-sale">16% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (4).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">Spare</p>
+						<p class="card__text-author--grey-normal">Prince Harry the Duke of Sussex</p>
+
+						<p class="product__price-new">29,71 €<span class="product__price-old">35,50 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit d-none">Hit</p>
+							<p class="badge badge-new">New</p>
+							<p class="badge badge-sale">11% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (5).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">Digital Minimalism</p>
+						<p class="card__text-author--grey-normal">Cal Newport</p>
+
+						<p class="product__price-new">11,94 €<span class="product__price-old">13,50 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit">Hit</p>
+							<p class="badge badge-new d-none">New</p>
+							<p class="badge badge-sale">7% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (6).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">Meditations</p>
+						<p class="card__text-author--grey-normal">Marcus Aurelius</p>
+
+						<p class="product__price-new">10,65 €<span class="product__price-old">11,50 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit d-none">Hit</p>
+							<p class="badge badge-new d-none">New</p>
+							<p class="badge badge-sale d-none">10% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (7).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">How to Think Like a Roman Emperor</p>
+						<p class="card__text-author--grey-normal">Donald Robertson</p>
+
+						<p class="product__price-new">15,75 €<span class="product__price-old d-none">22,00 €</span></p>
+
+						<button type="button" class="btn btn-green"><span class="btn__text">End up</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit d-none">Hit</p>
+							<p class="badge badge-new d-none">New</p>
+							<p class="badge badge-sale d-none">10% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (8).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">The Meditations of Marcus </p>
+						<p class="card__text-author--grey-normal">Marcus Aurelius</p>
+
+						<p class="product__price-new">10,90 €<span class="product__price-old d-none">10,90 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit d-none">Hit</p>
+							<p class="badge badge-new d-none">New</p>
+							<p class="badge badge-sale">20% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (9).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">Lives of the Stoics</p>
+						<p class="card__text-author--grey-normal">Ryan Holiday</p>
+
+						<p class="product__price-new">11,51 €<span class="product__price-old">14,50 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit d-none">Hit</p>
+							<p class="badge badge-new">New</p>
+							<p class="badge badge-sale">30% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (10).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">Dopamine Nation</p>
+						<p class="card__text-author--grey-normal">Dr Anna Lembke</p>
+
+						<p class="product__price-new">10,11 €<span class="product__price-old">14,50 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+					
+					</section>
+
+					<section class="product-card">
+
+						<div class="badge__all">
+							<p class="badge badge-hit d-none">Hit</p>
+							<p class="badge badge-new d-none">New</p>
+							<p class="badge badge-sale d-none">10% off</p>
+						</div>
+
+						<a href="#">
+							<img class="product-card__img" src="./images/image (11).png" alt="product-image">
+						</a>
+
+						<p class="card-title__text">I Don't Need Therapy</p>
+						<p class="card__text-author--grey-normal">Toni Lodge</p>
+						
+						<p class="product__price-new">21,16 €<span class="product__price-old d-none">22,00 €</span></p>
+
+						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+					
+					</section>
+
 				</div>
-			</menu>
-
-			<menu class="header-menu_item">
-				<p><a href="#" class="text--black-normal">Shop by category</a></p>
-				<ul class="nav-menu">
-					<li><a href="#" class="text--black-normal">Order Status</a></li>
-					<li><a href="#" class="text--black-normal">Wishlist</a></li>
-					<li><a href="#" class="text--black-normal">Sign in/Join</a></li>
-				</ul>
-			</menu>
-		</header>
 
 
-		<main class="main">
-			<h1 class="title">Bestsellers – our most popular items, updated daily</h1>
-
-			<div class="product">
-
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image.png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">Final Offer</p>
-					<p class="card__text-author--grey-normal">Lauren Asher</p>
-					
-					<p class="product__price-new">16,05 €<span class="product__price-old d-none">16,05 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
 				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (1).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">It Ends With Us: The most </p>
-					<p class="card__text-author--grey-normal">Colleen Hoover</p>
-
-					<p class="product__price-new">10,52 €<span class="product__price-old d-none">16,05 €</span></p>
-
-					<button type="button" class="btn btn-green"><span class="btn__text">End up</span></button>
 				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (2).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">Add to basket</p>
-					<p class="card__text-author--grey-normal">James Clear</p>
-
-					<p class="product__price-new">19,75 €<span class="product__price-old">22,00 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
-				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (3).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">The Creative Act</p>
-					<p class="card__text-author--grey-normal">Rick Rubin</p>
-
-					<p class="product__price-new">29,45 €<span class="product__price-old d-none">29,45 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
-				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (4).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">Spare</p>
-					<p class="card__text-author--grey-normal">Prince Harry the Duke of Sussex</p>
-
-					<p class="product__price-new">29,71 €<span class="product__price-old">35,50 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
-				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (5).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">Digital Minimalism</p>
-					<p class="card__text-author--grey-normal">Cal Newport</p>
-
-					<p class="product__price-new">11,94 €<span class="product__price-old">13,50 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
-				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (6).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">Meditations</p>
-					<p class="card__text-author--grey-normal">Marcus Aurelius</p>
-
-					<p class="product__price-new">10,65 €<span class="product__price-old">11,50 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
-				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (7).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">How to Think Like a Roman Emperor</p>
-					<p class="card__text-author--grey-normal">Donald Robertson</p>
-
-					<p class="product__price-new">15,75 €<span class="product__price-old d-none">22,00 €</span></p>
-
-					<button type="button" class="btn btn-green"><span class="btn__text">End up</span></button>
-				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (8).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">The Meditations of Marcus </p>
-					<p class="card__text-author--grey-normal">Marcus Aurelius</p>
-
-					<p class="product__price-new">10,90 €<span class="product__price-old d-none">10,90 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
-				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (9).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">Lives of the Stoics</p>
-					<p class="card__text-author--grey-normal">Ryan Holiday</p>
-
-					<p class="product__price-new">11,51 €<span class="product__price-old">14,50 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
-				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (10).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">Dopamine Nation</p>
-					<p class="card__text-author--grey-normal">Dr Anna Lembke</p>
-
-					<p class="product__price-new">10,11 €<span class="product__price-old">14,50 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
-				
-				</section>
-				<section class="product-card">
-
-					<a href="#">
-						<img class="product-card__img" src="./images/image (11).png" alt="product-image">
-					</a>
-
-					<p class="card-title__text">I Don't Need Therapy</p>
-					<p class="card__text-author--grey-normal">Toni Lodge</p>
-					
-					<p class="product__price-new">21,16 €<span class="product__price-old d-none">22,00 €</span></p>
-
-					<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
-				
-				</section>
-
-			</div>
-
-
+			</main>
 			
 			
-		</main>
-		
-		
-		<footer class="footer">
-			<p class="footer__text">&copy; 2023</p>
-			<p class="footer__text">All rights reserved</p>
+			<footer class="footer">
+				<p class="footer__text">&copy; 2023</p>
+				<p class="footer__text">All rights reserved</p>
 
-		</footer>
+			</footer>
+			
+		</div>
 
 			<section>
 				<button type="button" class="chat__background">

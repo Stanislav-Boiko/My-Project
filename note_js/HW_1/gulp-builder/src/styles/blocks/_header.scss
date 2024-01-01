@@ -1,8 +1,12 @@
-
-
 .header {
-    position: sticky;
+    max-width: 1400px;
+    width: 100%;
+    position: absolute;
+    position: fixed;
+    z-index: 3;
     top: 0;
+    right: auto;
+    left: auto;
 }
 
 .header-menu {
@@ -11,8 +15,6 @@
     align-items: center;
     height: 72px;
     padding: 16px 52px;
-    margin: 0 auto;
-    max-width: 1400px;
     background-color: #10BBD5;
 
     .logo {

@@ -1,3 +1,7 @@
+.d-none {
+    display: none;
+}
+
 .product {
     display: flex;
     flex-wrap: wrap;
@@ -5,12 +9,39 @@
 
 
     .product-card {
+        position: relative;
         padding: 32px;
         width: 306px;
         height: 512px;
         margin-bottom: 32px;
         border: 1px solid $border--color-grey;
         background: #F8FDFE;
+
+        .badge__all {
+            position: absolute;
+            top: 32px;
+            left: 32px;
+            display: flex;
+            gap: 4px;
+            z-index: 1;
+
+            .badge {
+                padding: 4px 8px;
+                border-radius: 4px;
+            }
+
+            .badge-hit {
+                background-color: #4200FF;
+            }
+
+            .badge-new {
+                background-color: #AF39E7;;
+            }
+
+            .badge-sale {
+                background-color: #EA33C0;
+            }
+        }
 
         .product-card__img {
             margin: 0 32px 16px 32px;
@@ -21,12 +52,8 @@
             border-top: 1px solid $border--color-grey;
         }
 
-        .product_price-new {
+        .product__price-new {
             margin: 8px 0 16px 0;
-
-            .d-none {
-                display: none;
-            }
         }
     }
 }
