@@ -61,7 +61,7 @@
     line-height: 28px;
 }
 
-.product_price-new {
+.product__price-new {
     color: $price-new--color-red;
     font-family: Cabin;
     font-size: 24px;
@@ -70,7 +70,7 @@
     line-height: 32px;
 }
 
-.product_price-old {
+.product__price-old {
     color: $price-old--color-grey;
     font-family: Cabin;
     font-size: 24px;
@@ -79,5 +79,13 @@
     line-height: 32px;
     text-decoration: line-through 1px;
     margin-left: 24px;
+}
 
-    }
+.footer__text {
+    color: $footer__text;
+    font-family: Cabin;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
