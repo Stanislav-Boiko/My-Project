@@ -7,7 +7,7 @@
     top: 0;
 }
 
-.header-menu {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,49 +15,56 @@
     padding: 16px 52px;
     background-color: #10BBD5;
 
-    .logo {
-        color: #F8FDFE;
-        font-family: Cabin;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+    .menu__logo-link {
         display: flex;
         align-items: center;
 
-        &::before {
-            content: url(/src/images/logo_book.svg);
-            width: 26px;
-            height: 28px;
+        .menu__logo--text {
+            color: #F8FDFE;
+            font-family: Cabin;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            padding-left: 4px;
         }
     }
 
-    .basket {
-        height: 40px;
-        gap: 8px;
+    .menu__basket {
         position: relative;
         display: flex;
         align-items: center;
+        height: 40px;
+        gap: 8px;
 
-        .basket-icon {
+        
+        .menu__basket-price {
+            color: $text-normal--color-white;
+            font-family: Cabin;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .menu__basket-btn {
             display: flex;
             align-items: center;
             flex-direction: column;
             background-color: #10BBD5;
         
-            .basket-wraper {
+            .menu__basket--wraper {
                 display: flex;
                 margin-top: 3px;
                 margin-left: 3px;
                 gap: 4px;
                 
-                .basket-icon__items {
+                .menu__basket-icon-wheel {
                     flex: none;
                     width: 9px;
                     height: 9px;
                 }
                 
-                .basket-icon_number {
+                .menu__basket-icon-quantity {
                     position: absolute;
                     color: #000;
                     top: 12px;
@@ -73,17 +80,25 @@
     }
 }
 
-.header-menu_item {
+.header__menu-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
+    width: 100%;
     height: 32px;
-    margin: 0 auto;
     padding: 0 52px;
     background: #FFF;
 
-    .nav-menu {
+    .header__menu-item-text--black {
+        color: #000;
+        font-family: Cabin;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .header__menu-item-list {
         display: flex;
         gap: 40px;
     }

@@ -9,25 +9,30 @@
 		<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Quicksand:wght@500;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body class="body">
+		
+
 		<div class="container">
 
 			<header class="header">
 				
-				<menu class="header-menu">
-					<a href="#" class="logo">bookRead</a>
-					<div class="basket">
+				<menu class="menu">
 
-						<p class="text--white-normal">0,00 €</p>
+					<a href="#" class="menu__logo-link"><img class="menu__logo-img" src="./images/logo_book.svg" alt="logo-book_img"><span class="menu__logo--text">bookRead</span></a>
+					
 
-						<button type="button" class="basket-icon">
+					<div class="menu__basket">
+
+						<p class="menu__basket-price">0,00 €</p>
+
+						<button type="button" class="menu__basket-btn">
 
 							<img src="./images/Vector.svg" alt="basket-icon">
 
-							<div class="basket-wraper">
-								<img class="basket-icon__items" src="./images/Vector (1).svg" alt="basket-icon">
+							<div class="menu__basket--wraper">
+								<img class="menu__basket-icon-wheel" src="./images/Vector (1).svg" alt="basket-wheel">
 
-								<img class="basket-icon__items" src="./images/Vector (1).svg" alt="basket-icon">
-								<p class="basket-icon_number">0</p>
+								<img class="menu__basket-icon-wheel" src="./images/Vector (1).svg" alt="basket-wheel">
+								<p class="menu__basket-icon-quantity">0</p>
 							</div>
 
 						</button>
@@ -35,295 +40,301 @@
 					</div>
 				</menu>
 
-				<menu class="header-menu_item">
-					<p><a href="#" class="text--black-normal">Shop by category</a></p>
-					<ul class="nav-menu">
-						<li><a href="#" class="text--black-normal">Order Status</a></li>
-						<li><a href="#" class="text--black-normal">Wishlist</a></li>
-						<li><a href="#" class="text--black-normal">Sign in/Join</a></li>
+				<menu class="header__menu-item">
+					<p><a href="#" class="header__menu-item-text--black">Shop by category</a></p>
+					<ul class="header__menu-item-list">
+						<li><a href="#" class="header__menu-item-text--black">Order Status</a></li>
+						<li><a href="#" class="header__menu-item-text--black">Wishlist</a></li>
+						<li><a href="#" class="header__menu-item-text--black">Sign in/Join</a></li>
 					</ul>
 				</menu>
+
 			</header>
 
+		</div>
 
+
+		<div class="container">
 			<main class="main">
-				<h1 class="title">Bestsellers – our most popular items, updated daily</h1>
+				<h1 class="title main__title">Bestsellers – our most popular items, updated daily</h1>
 
-				<div class="product">
+				<div class="wraper">
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit">Hit</p>
-							<p class="badge badge-new d-none">New</p>
-							<p class="badge badge-sale d-none">10% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit">Hit</p>
+							<p class="sticker stickers__new d-none">New</p>
+							<p class="sticker stickers__sale d-none">10% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image.png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image.png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">Final Offer</p>
-						<p class="card__text-author--grey-normal">Lauren Asher</p>
+						<p class="product__title-text--black">Final Offer</p>
+						<p class="product__author-text--grey-normal">Lauren Asher</p>
 						
-						<p class="product__price-new">16,05 €<span class="product__price-old d-none">16,05 €</span></p>
+						<p class="price product__price--new">16,05 €<span class="price product__price--old d-none">16,05 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit d-none">Hit</p>
-							<p class="badge badge-new">New</p>
-							<p class="badge badge-sale d-none">10% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit d-none">Hit</p>
+							<p class="sticker stickers__new">New</p>
+							<p class="sticker stickers__sale d-none">10% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (1).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (1).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">It Ends With Us: The most </p>
-						<p class="card__text-author--grey-normal">Colleen Hoover</p>
+						<p class="product__title-text--black">It Ends With Us: The most </p>
+						<p class="product__author-text--grey-normal">Colleen Hoover</p>
 
-						<p class="product__price-new">10,52 €<span class="product__price-old d-none">16,05 €</span></p>
+						<p class="price product__price--new">10,52 €<span class="price product__price--old d-none">16,05 €</span></p>
 
-						<button type="button" class="btn btn-green"><span class="btn__text">End up</span></button>
+						<button type="button" class="btn btn--green"><span class="btn--text">End up</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit">Hit</p>
-							<p class="badge badge-new d-none">New</p>
-							<p class="badge badge-sale">10% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit">Hit</p>
+							<p class="sticker stickers__new d-none">New</p>
+							<p class="sticker stickers__sale">10% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (2).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (2).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">Add to basket</p>
-						<p class="card__text-author--grey-normal">James Clear</p>
+						<p class="product__title-text--black">Add to basket</p>
+						<p class="product__author-text--grey-normal">James Clear</p>
 
-						<p class="product__price-new">19,75 €<span class="product__price-old">22,00 €</span></p>
+						<p class="price product__price--new">19,75 €<span class="price product__price--old">22,00 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit d-none">Hit</p>
-							<p class="badge badge-new d-none">New</p>
-							<p class="badge badge-sale d-none">10% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit d-none">Hit</p>
+							<p class="sticker stickers__new d-none">New</p>
+							<p class="sticker stickers__sale d-none">10% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (3).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (3).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">The Creative Act</p>
-						<p class="card__text-author--grey-normal">Rick Rubin</p>
+						<p class="product__title-text--black">The Creative Act</p>
+						<p class="product__author-text--grey-normal">Rick Rubin</p>
 
-						<p class="product__price-new">29,45 €<span class="product__price-old d-none">29,45 €</span></p>
+						<p class="price product__price--new">29,45 €<span class="price product__price--old d-none">29,45 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit">Hit</p>
-							<p class="badge badge-new d-none">New</p>
-							<p class="badge badge-sale">16% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit">Hit</p>
+							<p class="sticker stickers__new d-none">New</p>
+							<p class="sticker stickers__sale">16% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (4).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (4).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">Spare</p>
-						<p class="card__text-author--grey-normal">Prince Harry the Duke of Sussex</p>
+						<p class="product__title-text--black">Spare</p>
+						<p class="product__author-text--grey-normal">Prince Harry the Duke of Sussex</p>
 
-						<p class="product__price-new">29,71 €<span class="product__price-old">35,50 €</span></p>
+						<p class="price product__price--new">29,71 €<span class="price product__price--old">35,50 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit d-none">Hit</p>
-							<p class="badge badge-new">New</p>
-							<p class="badge badge-sale">11% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit d-none">Hit</p>
+							<p class="sticker stickers__new">New</p>
+							<p class="sticker stickers__sale">11% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (5).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (5).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">Digital Minimalism</p>
-						<p class="card__text-author--grey-normal">Cal Newport</p>
+						<p class="product__title-text--black">Digital Minimalism</p>
+						<p class="product__author-text--grey-normal">Cal Newport</p>
 
-						<p class="product__price-new">11,94 €<span class="product__price-old">13,50 €</span></p>
+						<p class="price product__price--new">11,94 €<span class="price product__price--old">13,50 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit">Hit</p>
-							<p class="badge badge-new d-none">New</p>
-							<p class="badge badge-sale">7% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit">Hit</p>
+							<p class="sticker stickers__new d-none">New</p>
+							<p class="sticker stickers__sale">7% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (6).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (6).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">Meditations</p>
-						<p class="card__text-author--grey-normal">Marcus Aurelius</p>
+						<p class="product__title-text--black">Meditations</p>
+						<p class="product__author-text--grey-normal">Marcus Aurelius</p>
 
-						<p class="product__price-new">10,65 €<span class="product__price-old">11,50 €</span></p>
+						<p class="price product__price--new">10,65 €<span class="price product__price--old">11,50 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit d-none">Hit</p>
-							<p class="badge badge-new d-none">New</p>
-							<p class="badge badge-sale d-none">10% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit d-none">Hit</p>
+							<p class="sticker stickers__new d-none">New</p>
+							<p class="sticker stickers__sale d-none">10% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (7).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (7).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">How to Think Like a Roman Emperor</p>
-						<p class="card__text-author--grey-normal">Donald Robertson</p>
+						<p class="product__title-text--black">How to Think Like a Roman Emperor</p>
+						<p class="product__author-text--grey-normal">Donald Robertson</p>
 
-						<p class="product__price-new">15,75 €<span class="product__price-old d-none">22,00 €</span></p>
+						<p class="price product__price--new">15,75 €<span class="price product__price--old d-none">22,00 €</span></p>
 
-						<button type="button" class="btn btn-green"><span class="btn__text">End up</span></button>
+						<button type="button" class="btn btn--green"><span class="btn--text">End up</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit d-none">Hit</p>
-							<p class="badge badge-new d-none">New</p>
-							<p class="badge badge-sale d-none">10% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit d-none">Hit</p>
+							<p class="sticker stickers__new d-none">New</p>
+							<p class="sticker stickers__sale d-none">10% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (8).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (8).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">The Meditations of Marcus </p>
-						<p class="card__text-author--grey-normal">Marcus Aurelius</p>
+						<p class="product__title-text--black">The Meditations of Marcus </p>
+						<p class="product__author-text--grey-normal">Marcus Aurelius</p>
 
-						<p class="product__price-new">10,90 €<span class="product__price-old d-none">10,90 €</span></p>
+						<p class="price product__price--new">10,90 €<span class="price product__price--old d-none">10,90 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit d-none">Hit</p>
-							<p class="badge badge-new d-none">New</p>
-							<p class="badge badge-sale">20% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit d-none">Hit</p>
+							<p class="sticker stickers__new d-none">New</p>
+							<p class="sticker stickers__sale">20% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (9).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (9).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">Lives of the Stoics</p>
-						<p class="card__text-author--grey-normal">Ryan Holiday</p>
+						<p class="product__title-text--black">Lives of the Stoics</p>
+						<p class="product__author-text--grey-normal">Ryan Holiday</p>
 
-						<p class="product__price-new">11,51 €<span class="product__price-old">14,50 €</span></p>
+						<p class="price product__price--new">11,51 €<span class="price product__price--old">14,50 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit d-none">Hit</p>
-							<p class="badge badge-new">New</p>
-							<p class="badge badge-sale">30% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit d-none">Hit</p>
+							<p class="sticker stickers__new">New</p>
+							<p class="sticker stickers__sale">30% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (10).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (10).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">Dopamine Nation</p>
-						<p class="card__text-author--grey-normal">Dr Anna Lembke</p>
+						<p class="product__title-text--black">Dopamine Nation</p>
+						<p class="product__author-text--grey-normal">Dr Anna Lembke</p>
 
-						<p class="product__price-new">10,11 €<span class="product__price-old">14,50 €</span></p>
+						<p class="price product__price--new">10,11 €<span class="price product__price--old">14,50 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
-					<section class="product-card">
+					<section class="product">
 
-						<div class="badge__all">
-							<p class="badge badge-hit d-none">Hit</p>
-							<p class="badge badge-new d-none">New</p>
-							<p class="badge badge-sale d-none">10% off</p>
+						<div class="stickers product__stickers">
+							<p class="sticker stickers__hit d-none">Hit</p>
+							<p class="sticker stickers__new d-none">New</p>
+							<p class="sticker stickers__sale d-none">10% off</p>
 						</div>
 
-						<a href="#">
-							<img class="product-card__img" src="./images/image (11).png" alt="product-image">
+						<a href="#" class="product__link-img">
+							<img src="./images/image (11).png" alt="product-image">
 						</a>
 
-						<p class="card-title__text">I Don't Need Therapy</p>
-						<p class="card__text-author--grey-normal">Toni Lodge</p>
+						<p class="product__title-text--black">I Don't Need Therapy</p>
+						<p class="product__author-text--grey-normal">Toni Lodge</p>
 						
-						<p class="product__price-new">21,16 €<span class="product__price-old d-none">22,00 €</span></p>
+						<p class="price product__price--new">21,16 €<span class="price product__price--old d-none">22,00 €</span></p>
 
-						<button type="button" class="btn btn-violet"><span class="btn__text">Add to basket</span></button>
+						<button type="button" class="btn btn--violet"><span class="btn--text">Add to basket</span></button>
 					
 					</section>
 
 				</div>
 
-
-				
-				
 			</main>
-			
-			
-			<footer class="footer">
-				<p class="footer__text">&copy; 2023</p>
-				<p class="footer__text">All rights reserved</p>
-
-			</footer>
-			
 		</div>
+			
 
-			<section>
-				<button type="button" class="chat__background">
-					<span class="chat__ikon"></span>
-				</button>
-			</section>
+		<div class="container">
+
+			<footer class="footer">
+
+				<p class="footer__text--white">&copy; 2023</p>
+				<p class="footer__text--white">All rights reserved</p>
+				
+			</footer>
+
+		</div>
+			
+
+		<section class="chat">
+			<button type="button" class="chat__btn">
+				<img class="chat__ikon" src="./images/icon.svg" alt="chat__ikon">
+			</button>
+		</section>
 			
 	</body>
 </html>

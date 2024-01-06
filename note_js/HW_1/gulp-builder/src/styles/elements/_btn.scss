@@ -11,7 +11,7 @@ button {
     border: none;
     width: 100%;
 
-    .btn__text {
+    .btn--text {
         color: #F8FDFE;
         text-align: center;
         font-family: Cabin;
@@ -22,7 +22,7 @@ button {
         }
 }
 
-.btn-green {
+.btn--green {
     background: $btn-green--color;
 
     &:hover {
@@ -30,7 +30,7 @@ button {
     }
 }
 
-.btn-violet {
+.btn--violet {
     background: $btn-violet--color;
     
     &:hover {

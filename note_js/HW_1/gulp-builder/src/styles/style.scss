@@ -1,7 +1,10 @@
 // * Це головний sass/scss файл проекту
-@import "variables/variables.scss";
-@import "base/base.scss";
+@import "colors/colors.scss";
+@import "reset/reset.scss";
 @import "elements/elements.scss";
-@import "blocks/blocks.scss";
-@import "sections/sections.scss";
+@import "section/section.scss";
+@import "product/product.scss";
 
+* {
+    box-sizing: border-box;
+}

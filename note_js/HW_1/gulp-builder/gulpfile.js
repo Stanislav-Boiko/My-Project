@@ -26,7 +26,7 @@ const cssTaskHandler = () => {
 };
 
 const imagesTaskHandler = () => {
-	return src("./src/images/**/*.*")
+	return src("./src/img/**/*.*")
 		.pipe(imagemin())
 		.pipe(dest("./dist/images"));
 };
@@ -36,8 +36,7 @@ const fontTaskHandler = () => {
 };
 
 const cleanDistTaskHandler = () => {
-	return src("./dist", { read: false, allowEmpty: true }).pipe(
-		clean({ force: true })
+	return src("./dist", { read: false, allowEmpty: true }).pipe(clean({ force: true })
 	);
 };
 
@@ -48,7 +47,7 @@ const browserSyncTaskHandler = () => {
 		}
 	});
 
-	watch("./src/scss/**/*.scss").on(
+	watch("./src/styles/**/*.scss").on(
 		"all",
 		series(cssTaskHandler, browserSync.reload)
 	);
@@ -68,9 +67,6 @@ export const css = cssTaskHandler;
 export const font = fontTaskHandler;
 export const images = imagesTaskHandler;
 
-export const build = series(
-	cleanDistTaskHandler,
-	parallel(htmlTaskHandler, cssTaskHandler, fontTaskHandler, imagesTaskHandler)
-);
+export const build = series(cleanDistTaskHandler, parallel(htmlTaskHandler, cssTaskHandler, fontTaskHandler, imagesTaskHandler));
 export const dev = series(build, browserSyncTaskHandler);
 
