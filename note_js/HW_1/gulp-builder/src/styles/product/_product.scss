@@ -54,7 +54,7 @@
             margin: 0 32px 16px 32px;
         }
         
-        .product__title-text--black {
+        .product__title-text {
             overflow: hidden;
             color: $card-title--color-black;
             text-overflow: ellipsis;
@@ -64,6 +64,10 @@
             font-style: normal;
             font-weight: 700;
             line-height: 28px;
+        }
+
+        .product__title-text--black {
+            color: $card-title--color-black;
         }
 
         .product__author-text--grey-normal {
