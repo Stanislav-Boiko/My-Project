@@ -1,50 +1,75 @@
-// npm i -D gulp sass gulp-sass ....
+import gulp from "gulp";
+const { src, dest, watch, series, parallel } = gulp;
 
-import gulp from 'gulp'
-import sass from 'sass'
-import gulpsass from 'gulp-sass'
-import cleancss from 'gulp-clean-css'
-import htmlmin from 'gulp-htmlmin'
-import imagemin from 'gulp-imagemin'
-import browserSync from 'browser-sync'
+import imagemin from "gulp-imagemin";
+import autoprefixer from "gulp-autoprefixer";
+import csso from "gulp-csso";
+import clean from "gulp-clean";
+import dartSass from "sass";
+import gulpSass from "gulp-sass";
+const sass = gulpSass(dartSass);
 
-const browser = browserSync.create()
+import bsc from "browser-sync";
+const browserSync = bsc.create();
 
-browser.init({
-    server: {
-        baseDir: './build'
-    }
-})
+const htmlTaskHandler = () => {
+	return src("./src/*.html").pipe(dest("./dist"));
+};
 
-const sassPlugin = gulpsass(sass)
+const cssTaskHandler = () => {
+	return src("./src/styles/**/*.scss")
+		.pipe(sass().on("error", sass.logError))
+		.pipe(autoprefixer())
+		.pipe(csso())
+		.pipe(dest("./dist/css"))
+		.pipe(browserSync.stream());
+};
 
+const imagesTaskHandler = () => {
+	return src("./src/images/**/*.*")
+		.pipe(imagemin())
+		.pipe(dest("./dist/images"));
+};
 
+const fontTaskHandler = () => {
+	return src("./src/fonts/**/*.*").pipe(dest("./dist/fonts"));
+};
 
-export function html(){
-    return gulp.src('./src/index.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'))
-}
+const cleanDistTaskHandler = () => {
+	return src("./dist", { read: false, allowEmpty: true }).pipe(
+		clean({ force: true })
+	);
+};
 
-export function images(){
-    return gulp.src('./src/images/**/*.*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('build/images'))
-}
+const browserSyncTaskHandler = () => {
+	browserSync.init({
+		server: {
+			baseDir: "./dist",
+		}
+	});
 
-export function styles(){
-    return gulp.src('./src/styles/**/*.scss')
-        .pipe(sassPlugin())
-        .pipe(cleancss())
-        .pipe(gulp.dest('build'))
-}
+	watch("./src/scss/**/*.scss").on(
+		"all",
+		series(cssTaskHandler, browserSync.reload)
+	);
+	watch("./src/*.html").on(
+		"change",
+		series(htmlTaskHandler, browserSync.reload)
+	);
+	watch("./src/img/**/*").on(
+		"all",
+		series(imagesTaskHandler, browserSync.reload)
+	);
+};
 
-function reloadBrowser(cb){
-    browser.reload()
-    cb()
-}
+export const cleaning = cleanDistTaskHandler;
+export const html = htmlTaskHandler;
+export const css = cssTaskHandler;
+export const font = fontTaskHandler;
+export const images = imagesTaskHandler;
 
-
-export function watch(){
-    return gulp.watch('src/**/*.*', gulp.series(gulp.parallel(html, images, styles), reloadBrowser))
-}
+export const build = series(
+	cleanDistTaskHandler,
+	parallel(htmlTaskHandler, cssTaskHandler, fontTaskHandler, imagesTaskHandler)
+);
+export const dev = series(build, browserSyncTaskHandler);
