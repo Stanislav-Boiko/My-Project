@@ -36,9 +36,8 @@ const fontTaskHandler = () => {
 };
 
 const cleanDistTaskHandler = () => {
-	return src("./dist", { read: false, allowEmpty: true }).pipe(
-		clean({ force: true })
-	);
+	return src("./dist", { read: false, allowEmpty: true })
+	.pipe(clean({ force: true }));
 };
 
 const browserSyncTaskHandler = () => {
