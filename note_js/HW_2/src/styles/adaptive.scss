@@ -2,11 +2,6 @@
     .burger-menu {
         display: none;
     }
-
-    .project__banking-items {
-        display: none;
-       }
-    
 }
 
 @media screen and (max-width: 1200px) {
@@ -14,5 +9,126 @@
         display: none;
     }
 
-  
+    .project__banking-item3 {
+        display: none;
+    }
+    
+    .title {
+        padding-top: 274px;
+    }
+
+    .project {
+        padding-top: 52px;
+    }
+
+    .project__banking-items {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .wraper {
+        padding: 0 135px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wraper {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .wraper {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wraper {
+        padding: 0 21px;
+    }
+
+    .title {
+        padding-top: 412px;
+
+        &__text {
+            font-size: 48px;
+        }
+    }
+
+    .meet__title-text--yellow {
+        font-size: 36px;
+        padding-right: 60px;
+    }
+
+    .meet__text--white-normal {
+        font-size: 15px;
+        padding-right: 60px;
+    }
+
+    .meet__list-item-text--white-big {
+        font-size: 36px;
+    }
+
+
+
+    .project__banking {
+        max-width: 726px;
+        padding: 16px;
+    }
+
+    .banking-img {
+        height: 280px;
+    }
+
+    .project__banking-text-title--grey {
+        font-size: 32px;
+    }
+
+    .project__banking-text--black {
+        font-size: 15px;
+    }
+
+    .project__banking-item1 {
+        display: none;
+    }
+
+    .banking-item{
+        max-width: 726px;
+        padding: 16px;
+    }
+
+    .banking-item-img {
+        height: 280px;
+    }
+
+    .banking-item__text-title--grey {
+        font-size: 24px;
+    }
+
+    .banking-item__text---black {
+        font-size: 15px;
+    }
+
+    .graphics__title-text--white {
+        font-size: 36px;
+    }
+
+    .graphics__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .grid-item-3 {
+        position: relative;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    
 }

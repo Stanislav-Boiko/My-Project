@@ -41,60 +41,54 @@
     
 }
 
-.header {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 195px;
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
     
-    &__logo {
+    .header__logo {
         cursor: pointer;
     }
 
-    &__menu {
+    &-items {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 92px;
-        
-        &-items {
-            display: flex;
-            gap: 20px;
-        
-            .header__menu-item {
-                
-                .header__menu-link {
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                    padding: 10px 16px;
-                    border-radius: 20px;
-                    border: 1px solid #FFF;
+        gap: 20px;
+    
+        .header__menu-item {
+            
+            .header__menu-link {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 10px 16px;
+                border-radius: 20px;
+                border: 1px solid #FFF;
 
-                    .header__menu-text--white-manrope-bold {
-                        color: $header-menu-text-color;
-                        font-weight: 700;
-                        font-size: 16px;
-                    }
+                .header__menu-text--white-manrope-bold {
+                    color: $header-menu-text-color;
+                    font-weight: 700;
+                    font-size: 16px;
                 }
             }
         }
-
-        .burger-menu {
-            cursor: pointer;
-        }
     }
+
+    .burger-menu {
+        cursor: pointer;
+    }
+}
     
-}   
+  
     
 .container-title {
     background: linear-gradient(253deg, #FFEE32 -13.48%, #D6D6D6 125.48%);
-    height: 800px;
-}
+ }
 
 .title {
-    padding-top: 486px;
     max-width: 846px;
-    height: 192px;
+    padding: 486px 0 120px 0;
     
     &__text {
         color: $header-title-text-color;
@@ -107,11 +101,6 @@
 
 .container-meet {
     background: #202020;
-    height: 470px;
-}
-
-.meet-content {
-    margin-top: 100px;
 }
 
 .meet {
@@ -119,48 +108,51 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    width: 540px;
-
-    &__title-text--yellow {
-        color: $meet-title-text-color;
-        font-size: 48px;
-        font-weight: 700;
-    }
-
-    &__text--white-normal {
-        font-family: Manrope;
-        color: $meet-text-color;
-        font-weight: 500;
-    }
-
-    &__list {
-        display: flex;
-        align-items: flex-start;
-        gap: 96px;
-
-        &-item {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 5px;
-
-            &-text--white-big {
-                color: $meet-text-color;
-                font-family: DynaPuff;
-                font-size: 48px;
-                font-weight: 700;
-            }
-
-            &-text--white-small {
-                color: $meet-text-color;
-                font-size: 16px;
-                font-weight: 700;
-            }
-            
-        }
-    }
+    max-width: 540px;
+    padding: 102px 0;
 }
 
+.meet__title-text--yellow {
+    color: $meet-title-text-color;
+    font-size: 48px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.meet__text--white-normal {
+    font-family: Manrope;
+    color: $meet-text-color;
+    font-weight: 500;
+    max-width: 540px;
+}
+
+.meet__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.meet__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.meet__list-item-text--white-big {
+    color: $meet-text-color;
+    font-family: DynaPuff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.meet__list-item-text--white-small {
+    color: $meet-text-color;
+    font-size: 16px;
+    font-weight: 700;
+}
+      
 
 
 .container-project {
@@ -169,114 +161,115 @@
 
 .project {
     padding: 86px 0;
-    
-    &__banking {
-        display: flex;
-        width: 100%;
-        padding: 24px 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 22px;
-        border-radius: 24px;
-        background: #FFFEF2;
-
-        .project__banking-link {
-            position: relative;
-            width: 100%;
-
-            .banking-img {
-                border-radius: 13px;
-                width: 100%;
-                height: 498px;
-                object-fit: cover;
-            }
-        
-            .project__banking-img--arrow-up {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 56px;
-                height: 56px;
-                background-color: #FFF;
-                border-radius: 50%;
-                top: 11px;
-                right: 11px;
-                z-index: 1;
-            }
-        }
-
-        .project__banking-text-title--grey {
-            color: $banking-text-title-color;
-            font-size: 40px;
-            font-weight: 600;
-        }
-
-        .project__banking-text--black {
-            color: $banking-text--black;
-            font-size: 16px;
-            font-weight: 700;
-            max-width: 580px;
-        }
-    }
-    
-    .project__banking-items {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        margin-top: 64px;
-
-        .banking-item {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
-            max-width: 325px;
-            padding: 20px;
-            border-radius: 24px;
-            background: #FFFEF2;
-
-            .banking-link  {
-                position: relative;
-                width: 100%;
-
-                .project__banking-img--arrow-up {
-                    position: absolute;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 56px;
-                    height: 56px;
-                    background-color: #FFF;
-                    border-radius: 50%;
-                    top: 11px;
-                    right: 11px;
-                    z-index: 1;
-                }
-                
-                .banking-item-img {
-                    width: 100%;
-                    height: 338px;
-                    object-fit: cover;
-                }
-            }
-            
-
-            .banking-item__text-title--grey {
-                color: $banking-text-title-color;
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 38px;
-            }
-
-            .banking-item__text---black {
-                color: $banking-text--black;
-                font-size: 16px;
-                font-weight: 500;
-            }
-        }
-    }
+}  
+.project__banking {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    border-radius: 24px;
+    background: #FFFEF2;
 }
+.project__banking-link {
+    position: relative;
+    width: 100%;
+}
+.banking-img {
+    border-radius: 13px;
+    width: 100%;
+    height: 498px;
+    object-fit: cover;
+}
+
+.project__banking-img--arrow-up {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: #FFF;
+    border-radius: 50%;
+    top: 11px;
+    right: 11px;
+    z-index: 1;
+}
+    
+
+.project__banking-text-title--grey {
+    color: $banking-text-title-color;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.project__banking-text--black {
+    color: $banking-text--black;
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 580px;
+}
+
+
+.project__banking-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 64px;
+}
+
+.banking-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 325px;
+    padding: 20px;
+    border-radius: 24px;
+    background: #FFFEF2;
+}
+
+.banking-link  {
+    position: relative;
+    width: 100%;
+}
+
+.project__banking-img--arrow-up {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: #FFF;
+    border-radius: 50%;
+    top: 11px;
+    right: 11px;
+    z-index: 1;
+}
+            
+.banking-item-img {
+    width: 100%;
+    height: 338px;
+    object-fit: cover;
+}
+         
+
+.banking-item__text-title--grey {
+    color: $banking-text-title-color;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.banking-item__text---black {
+    color: $banking-text--black;
+    font-size: 16px;
+    font-weight: 500;
+}
+   
+
 
 .container-graphics {
     background: #202020;
@@ -284,90 +277,89 @@
 
 .graphics {
     padding: 82px 0 138px 0;
-
-    &__title-text--white {
-        color: $title-text--white;
-        font-size: 80px;
-        font-weight: 700;
-    }
-
-    .graphics__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 26px;
-        margin-top: 38px;
-
-        &-item {
-            flex-shrink: 0;
-        }
-
-        .grid-item-1 {
-            position: relative;
-            grid-column: 1 / 3;
-            grid-row: 1 / 2;
-
-            &::before {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                content: url(../images/SVG/Soft\ Star.svg);
-            }
-
-            .graphics__grid-img {
-                width: 100%;
-                height: 414px;
-                object-fit: cover;
-                border-radius: 40px;
-
-            }
-        }
-
-        .grid-item-2 {
-            position: relative;
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-
-            &::before {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                content: url(../images/SVG/Butterfly.svg);
-            }
-
-            .graphics__grid-img {
-                width: 100%;
-                max-width: 514px;
-                height: 414px;
-                border-radius: 40px;
-                object-fit: cover;
-            }
-        }
-
-        .grid-item-3 {
-            position: relative;
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-
-            &::before {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                content: url(../images/SVG/Asterisk\ 1.svg);
-            }
-
-            .graphics__grid-img {
-                width: 100%;
-                height: 414px;
-                border-radius: 40px;
-                object-fit: cover;
-            }
-        }
-    }
 }
 
+.graphics__title-text--white {
+    color: $title-text--white;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.graphics__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 26px;
+    margin-top: 38px;
+}
+
+.graphics__grid-item {
+    flex-shrink: 0;
+}
+
+.grid-item-1 {
+    position: relative;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.grid-item-1::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: url(../images/SVG/Soft\ Star.svg);
+}
+
+.graphics__grid-img1 {
+    width: 100%;
+    height: 414px;
+    object-fit: cover;
+    border-radius: 40px;
+
+}
+       
+.grid-item-2 {
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.grid-item-2::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: url(../images/SVG/Butterfly.svg);   
+}
+
+.graphics__grid-img2 {
+    width: 100%;
+    height: 414px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+        
+
+.grid-item-3 {
+    position: relative;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.grid-item-3::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: url(../images/SVG/Asterisk\ 1.svg);
+}
+
+.graphics__grid-img3 {
+    width: 100%;
+    height: 414px;
+    border-radius: 40px;
+    object-fit: cover;
+}
 .container-good {
     background-image: url(../images/img/Rectangle\ 8.png);
     object-fit: cover;
