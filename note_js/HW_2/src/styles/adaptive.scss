@@ -24,6 +24,15 @@
     .project__banking-items {
         margin-top: 100px;
     }
+
+    .footer {
+        padding: 96px 0 35px 0;
+    }
+
+    .footer__have {
+        height: 150px;
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (max-width: 1070px) {
@@ -112,7 +121,7 @@
     }
 
     .graphics__title-text--white {
-        font-size: 36px;
+        font-size: 38px;
     }
 
     .graphics__grid {
@@ -130,5 +139,40 @@
         grid-row: 3 / 4;
     }
 
-    
+    .good {
+        height: 500px;
+
+        .good__text--white {
+            font-size: 24px;
+        }
+    }
+
+    .footer {
+        padding: 52px 0 40px 0;
+    }
+
+    .footer__have {
+        max-width: 400px;
+        height: 72px;
+        margin-bottom: 112px;
+    }
+
+    .have__img {
+        width: 52px;
+        height: 52px;
+        margin-right: 15px;
+    }
+
+    .footer__have-text-title--white {
+        font-size: 18px;
+    }
+
+    .footer__have-text--white {
+        font-size: 15px;
+    }
+
+    .footer__have-arrow {
+        width: 32px;
+        height: 15px;
+    }
 }
