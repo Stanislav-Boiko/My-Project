@@ -21,7 +21,6 @@
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-uglify-es": "^3.0.0",
     "sass": "^1.69.4"
   },
   "browserslist": [
