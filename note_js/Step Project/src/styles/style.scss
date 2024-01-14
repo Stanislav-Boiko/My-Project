@@ -23,10 +23,6 @@
     src: url(../fonts/Gilroy-ExtraBold.ttf);
 }
 
-body {
-    background: #fcf6e8;
-}
-
 .text--extra-bold {
     font-family: Gilroy;
     font-style: normal;
@@ -47,6 +43,11 @@ body {
     font-weight: 300;
     line-height: normal;
 }
+
+body {
+    background: #fcf6e8;
+}
+
 
 //   HEADER
 
@@ -95,6 +96,8 @@ body {
         }
     }
 
+//  NAME
+
     &__name {
 
         &-item {
@@ -119,5 +122,66 @@ body {
         margin: 30px auto 0 auto;
     }
 }
+
+
+//  HERO
+
+
+.hero {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+//  ABOUT ME
+
+
+.about-me {
+    display: grid;
+    grid-template-columns: 2fr 0.7fr;
+    height: auto;
+    padding: 70px 0;
+
+    &__description {
+        width: 100%;
+        padding: 0 70px;
+
+        &-text {
+            color: $light-black;
+            font-size: 62px;
+
+            &--extra-bold {
+                font-weight: 800;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        background: $light-black;
+        padding: 60px 70px 60px 10px;
+        
+        &-text {
+            color: $white;
+            text-align: right;
+            font-size: 32px;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+
+        &-network {
+            display: flex;
+            gap: 20px;
+            justify-content: end;
+            margin-top: 30px;
+        }
+    }
+}
+
+
 
 
