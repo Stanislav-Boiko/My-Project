@@ -1,0 +1,123 @@
+@import './reset.scss';
+@import './colors.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: 300;
+    src: url(../fonts/Gilroy-Light.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: 400;
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: 800;
+    src: url(../fonts/Gilroy-ExtraBold.ttf);
+}
+
+body {
+    background: #fcf6e8;
+}
+
+.text--extra-bold {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.text--regular {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text--light {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+//   HEADER
+
+
+//   LOGO-MENU
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .header__logo {
+            
+            .header__logo-link {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                .header__logo-text {
+                    color: $black;
+                    font-size: 35px;
+                    letter-spacing: -0.7px;
+                }
+            }
+        }
+
+        .header__menu {
+            cursor: pointer;
+            padding: 20px 0;
+
+            .header__menu-text {
+                color: $light-black;
+                font-size: 25px;
+            }
+        }
+    }
+
+    &__name {
+
+        &-item {
+            color: $light-black;
+            text-align: center;
+            font-size: 150px;
+            text-transform: uppercase;
+        }
+
+        &-digital {
+            color: $light-black;
+            text-align: center;
+            font-size: 150px;
+            text-transform: capitalize;
+        }
+    }
+
+    &__arrow-img {
+        display: block;
+        width: 25px;
+        height: 40px;
+        margin: 30px auto 0 auto;
+    }
+}
+
+
