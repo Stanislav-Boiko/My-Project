@@ -164,7 +164,7 @@ body {
         justify-content: space-between;
         width: 100%;
         background: $light-black;
-        padding: 60px 70px 60px 10px;
+        padding: 60px 70px 60px 70px;
         
         &-text {
             color: $white;
@@ -176,6 +176,7 @@ body {
 
         &-network {
             display: flex;
+            flex-wrap: wrap;
             gap: 20px;
             justify-content: end;
             margin-top: 30px;
@@ -204,6 +205,94 @@ body {
         align-items: center;
         gap: 10px;
         border-radius: 50px;
+    }
+}
+
+
+//  Selected work
+
+
+.selected-work {
+    padding: 70px 70px 100px 70px;
+
+    &__title {
+        color: $light-black;
+        text-align: center;
+        font-size: 212px;
+        letter-spacing: 6.48px;
+        text-transform: uppercase;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 70px 40px;
+        margin: 50px 0 70px 0;
+
+        .selected-work__item {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+
+            &-text {
+                align-self: stretch;
+                color: $black;
+                font-size: 40px;
+                line-height: 44px;
+                text-transform: uppercase;
+            }
+
+            &-img {
+                display: block;
+                width: 100%;
+            }
+
+            &-links {
+                display: flex;
+                gap: 30px;
+                margin-top: 30px;
+
+                .selected-work__item-link--white {
+                    background: $white;
+                    display: flex;
+                    padding: 15px 30px;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 50px;
+                    color: $light-black;
+                    font-size: 18px;
+                }
+
+            }
+
+            &-link--black {
+                display: flex;
+                padding: 10px 30px;
+                align-items: center;
+                gap: 10px;
+                width: 163px;
+                color: $white;
+                font-size: 18px;
+                border-radius: 50px;
+                background: $light-black;
+                text-transform: capitalize;
+                margin-top: auto;
+                margin-left: auto;
+            }
+        }
+    }
+
+    &__all-Work {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 188px;
+        color: $light-black;
+        font-size: 18px;
+        padding: 15px 60px;
+        border-radius: 50px;
+        background: $white;
     }
 }
 
