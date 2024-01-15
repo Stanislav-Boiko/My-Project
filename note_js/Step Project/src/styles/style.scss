@@ -142,6 +142,7 @@ body {
     grid-template-columns: 2fr 0.7fr;
     height: auto;
     padding: 70px 0;
+    border-bottom: 1px solid $light-black;
 
     &__description {
         width: 100%;
@@ -182,6 +183,29 @@ body {
     }
 }
 
+
+//  LIGOS
+
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 70px;
+    border-bottom: 1px solid $light-black;
+
+    &__item {
+        background: $white;
+        display: flex;
+        height: 70px;
+        padding: 15px 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 50px;
+    }
+}
 
 
 
