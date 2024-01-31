@@ -297,4 +297,39 @@ body {
 }
 
 
+//  our-team
+
+
+.our-team {
+    padding: 50px 70px;
+
+    &__title {
+        color: $light-black;
+        text-align: center;
+        font-size: 212px;
+        letter-spacing: 8.48px;
+        text-transform: uppercase;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 694px 694px;
+        grid-gap: 30px 40px;
+
+        &-item {
+
+            height: auto;
+            padding: 30px 0;
+
+            &-list {
+                display: flex;
+                justify-content: end;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+
 
