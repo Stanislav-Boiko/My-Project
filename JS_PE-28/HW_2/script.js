@@ -5,10 +5,9 @@ const password = "1111"
 
 const userPassword = prompt(`Вітаю ${username}, введіть ваш пароль...`);
 
-const result = password === userPassword;
-console.log(result);
+console.log(password === userPassword);
 
-const x = 5;
+const x = 6;
 const y = 3;
 
 alert(x+y);
