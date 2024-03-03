@@ -42,3 +42,6 @@ while(isNaN(c) || !c || c % 2 !== 0) {
 }
 
 console.log(c);
+
+
+
