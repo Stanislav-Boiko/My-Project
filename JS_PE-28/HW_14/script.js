@@ -1,47 +1,37 @@
 "use strict";
 
-let a = +prompt('Enter first nгmber...');
+
+// ТЕоритичні питання:
+// 1. В localStorage  дані зберігаються на постійній основі. А в sessionStorage - зберігаються тільки на час тривалості сесії браузера.
+// 2. Не зберігати паролі відкритим текстом, безпечніше через sessionStorage і видаляти їх після закриття сесії браузера.
+// 3. Автоматично видаляються.
 
 
-while(isNaN(a) || !a) {
-    alert("!!! Error !!! Try again");
-    a = +prompt("Enter the first number again...");
+const themeCheckbox = document.getElementById('theme');
+const cssLink = document.getElementById('theme-css');
+
+const DARK_CSS = './styleDark.css'
+const LIGHT_CSS = './styleLight.css'
+
+themeCheckbox.addEventListener('click', (event) => {
+    
+    if(event.target.checked){
+        cssLink.setAttribute('href', DARK_CSS)
+        localStorage.setItem('theme', 'dark')
+    }
+    else {
+        cssLink.setAttribute('href', LIGHT_CSS)
+        localStorage.setItem('theme', 'light')
+    }
+})
+
+
+const lastTheme = localStorage.getItem('theme') ?? 'light'
+
+if (lastTheme == 'light'){
+    cssLink.setAttribute('href', LIGHT_CSS)
 }
-
-
-let b = +prompt("Enter next number...");
-
-while(isNaN(b) || !b) {
-    alert("!!! Error !!! Try again");
-    b = +prompt("Enter the next number again...");
+else {
+    cssLink.setAttribute('href', DARK_CSS)
+    themeCheckbox.checked = true;
 }
-
-
-let min;
-
-let max;
-
-if(a > b) {
-    min = b;
-    max = a;
-} else {
-    min = a;
-    max = b;
-}
-
-for(let i = min; i <= max; i++) {
-    console.log(i);
-}
-
-
-let c = +prompt("Enter a PAIR number...");
-
-while(isNaN(c) || !c || c % 2 !== 0) {
-    alert("!!! Error !!! Try again");
-    c = +prompt("Enter the PAIR number again...");
-}
-
-console.log(c);
-
-
-

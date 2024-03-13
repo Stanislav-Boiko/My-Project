@@ -11,10 +11,26 @@ a {
 body {
     width: 1280px;
     margin: 0 auto;
+    background: #0C1927;
 }
 
 
 /* HEADER*/
+
+.theme {
+    display: flex;
+    width: 150px;
+    padding: 5px 8px;
+    background: #07a5e9;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    gap: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 20px;
+}
 
 
 .header {
@@ -31,7 +47,7 @@ body {
 }
 
 .logo-ra {
-    color: #000;
+    color: #f3efef;
 }
 
 .logo-mda {
@@ -51,7 +67,7 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    background-color:#35444F;
+    background-color:#567992;
 }
 
 .nav-header {
@@ -60,18 +76,19 @@ a {
     align-items: center;
     flex-shrink: 0;
     height: var(--header-wrap--height);
+    
 }
 
 .nav-header__item {
-    border-right: 1px solid #fff;
+    border-right: 1px solid #07a5e9;
 }
 
 .nav-header__item:first-child {
-    border-left: 1px solid #fff;
+    border-left: 1px solid #07a5e9;
 }
 
 .nav-header__item :hover {
-    background-color: #000;
+    background-color: #07a5e9;
 }
 
 .nav-header__item .nav-text {
@@ -88,7 +105,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    background: #35444F;
+    background: #567992;
 }
 
 
@@ -106,19 +123,20 @@ main {
     flex-shrink: 0;
     padding: 26px 0 26px 44px;
     border: 1px solid #000;
-    background: rgba(0, 0, 0, 0.00);
+    background: #567992;
     margin: 0;
     padding: 0;
 }
 
 .sidebar__links {
-    color: #495863;
+    color: #FFF;
     font-family: Roboto;
     font-size: 27px;
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
     margin: 0;
+    
 }
 
 .sidebar-text {
@@ -127,8 +145,7 @@ main {
 }
 
 .nav-sidebar__item :hover{
-    background-color: #DBDBDB;
-    color: #000;
+    background-color: #07a5e9;
 }
 
 
@@ -138,9 +155,9 @@ main {
 .main-item {
     width: 880px;
     flex-shrink: 0;
-    background: rgba(0, 0, 0, 0.00);
+    background: #567992;
     margin-left: 52px;
-    border: 1px solid #000;
+    border: 1px solid #07a5e9;
 }
 
 .koza {
@@ -169,7 +186,7 @@ main {
 }
 
 .title {
-    color: #2C2C2C;
+    color: #FFF;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
@@ -186,7 +203,7 @@ main {
     height: 70px;
     padding: 0 40px;
     margin-top: 54px;
-    background: rgba(99, 105, 110, 0.48);
+    background: #567992;
     align-items: center;
 }
 
@@ -197,7 +214,7 @@ main {
 }
 
 .nav-footer-item a {
-    color: #0C1927;
+    color: #FFF;
     font-family: Roboto;
     font-size: 28px;
     font-style: normal;
@@ -210,15 +227,15 @@ main {
 
 
 .nav-footer-item:hover {
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #07a5e9;
 }
 
 .nav-footer-item__link:hover {
-    color: #FFF;
+    color: #07a5e9;
 }
 
 .copy {
-    color: #010101;
+    color: #FFF;
     font-family: Roboto;
     font-size: 24px;
     font-style: normal;

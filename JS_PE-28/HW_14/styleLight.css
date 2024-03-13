@@ -17,6 +17,22 @@ body {
 /* HEADER*/
 
 
+.theme {
+    display: flex;
+    width: 150px;
+    padding: 5px 8px;
+    background: #4BCAFF;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    gap: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 20px;
+    
+}
+
 .header {
     width: 1280px;
     margin-top: 64px;
@@ -140,6 +156,7 @@ main {
     flex-shrink: 0;
     background: rgba(0, 0, 0, 0.00);
     margin-left: 52px;
+    
     border: 1px solid #000;
 }
 
