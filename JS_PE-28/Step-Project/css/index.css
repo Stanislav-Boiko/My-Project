@@ -88,6 +88,10 @@ img {
 
 /* * TRAINERS */
 
+.modal-open {
+    overflow: hidden;
+}
+
 .trainers-cards__container {
 	padding-left: 0;
 	margin-top: 0;

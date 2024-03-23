@@ -245,3 +245,72 @@ const DATA = [
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+	const modalTemplate = document.getElementById("modal-template");
+	const trainerCardTemplate = document.getElementById("trainer-card");
+	const trainersContainer = document.querySelector(".trainers-cards__container");
+  
+	function displayTrainers(trainers) {
+	  trainersContainer.innerHTML = "";
+  
+	  trainers.forEach(function (trainer) {
+		const trainerCard = trainerCardTemplate.content.cloneNode(true);
+		const trainerName = trainerCard.querySelector(".trainer__name");
+		const trainerImage = trainerCard.querySelector(".trainer__img");
+		const showMoreButton = trainerCard.querySelector(".trainer__show-more");
+  
+		trainerName.textContent = `${trainer["first name"]} ${trainer["last name"]}`;
+		trainerImage.setAttribute("src", trainer.photo);
+		trainerImage.setAttribute("alt", `${trainer["first name"]} ${trainer["last name"]}`);
+  
+		showMoreButton.addEventListener("click", function () {
+		  showModal(trainer);
+		});
+  
+		trainersContainer.appendChild(trainerCard);
+	  });
+	}
+  
+	function showModal(trainer) {
+	  const modalTemplate = document.querySelector('#modal-template').content.cloneNode(true);
+	  document.body.appendChild(modalTemplate);
+	  const modal = document.querySelector('.modal');
+	  modal.querySelector('.modal__img').src = trainer.photo;
+	  modal.querySelector('.modal__name').textContent = trainer["first name"] + " " + trainer["last name"];
+	  modal.querySelector('.modal__point--category').textContent = "Категорія: " + trainer.category;
+	  modal.querySelector('.modal__point--experience').textContent = "Досвід: " + trainer.experience;
+	  modal.querySelector('.modal__point--specialization').textContent = "Напрям тренера: " + trainer.specialization;
+	  modal.querySelector('.modal__text').textContent = trainer.description;
+	  document.body.classList.add('modal-open');
+
+	  modal.querySelector('.modal__close').addEventListener('click', function() {
+		  modal.remove();
+		  document.body.classList.remove('modal-open');
+	  });
+
+	  
+	}
+
+
+	const sortingBlock = document.querySelector('.sorting');
+	const sidebarBlock = document.querySelector('.sidebar');
+
+	if (sortingBlock) {
+		sortingBlock.removeAttribute('hidden');
+	}
+
+	if (sidebarBlock) {
+		sidebarBlock.removeAttribute('hidden');
+	}
+
+	displayTrainers(DATA);
+  });
+
+
+
+
+
+// console.log(trainerCard);
+
+
+
