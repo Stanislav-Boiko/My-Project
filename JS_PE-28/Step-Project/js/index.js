@@ -5,8 +5,8 @@ const DATA = [
 		"first name": "Олексій",
 		"last name": "Петров",
 		photo: "./img/trainers/trainer-m1.jpg",
-		specialization: "Басейн",
-		category: "майстер",
+		specialization: "swimming pool",
+		category: "master",
 		experience: "8 років",
 		description:
 			"Олексій має багаторічний досвід роботи з плавцями. Він займається якісною підготовкою спортсменів на міжнародних змаганнях. Його методика базується на новітніх технологіях тренувань.",
@@ -15,8 +15,8 @@ const DATA = [
 		"first name": "Марина",
 		"last name": "Іванова",
 		photo: "./img/trainers/trainer-f1.png",
-		specialization: "Тренажерний зал",
-		category: "спеціаліст",
+		specialization: "gym",
+		category: "specialist",
 		experience: "2 роки",
 		description:
 			"Марина спеціалізується на роботі з ваговими тренажерами. Вона розробила унікальну програму для набору м'язової маси. Її клієнти завжди задоволені результатами.",
@@ -25,8 +25,8 @@ const DATA = [
 		"first name": "Ігор",
 		"last name": "Сидоренко",
 		photo: "./img/trainers/trainer-m2.jpg",
-		specialization: "Дитячий клуб",
-		category: "інструктор",
+		specialization: "kids club",
+		category: "instructor",
 		experience: "1 рік",
 		description:
 			"Ігор працює з дітьми різного віку. Він створив ігрові методики для розвитку координації та спритності. Його уроки завжди цікаві та корисні для малюків.",
@@ -35,8 +35,8 @@ const DATA = [
 		"first name": "Тетяна",
 		"last name": "Мороз",
 		photo: "./img/trainers/trainer-f2.jpg",
-		specialization: "Бійцівський клуб",
-		category: "майстер",
+		specialization: "fight club",
+		category: "master",
 		experience: "10 років",
 		description:
 			"Тетяна є експертом в бойових мистецтвах. Вона проводить тренування для професіоналів і новачків. Її підхід до навчання допомагає спортсменам досягати високих результатів.",
@@ -45,8 +45,8 @@ const DATA = [
 		"first name": "Сергій",
 		"last name": "Коваленко",
 		photo: "./img/trainers/trainer-m3.jpg",
-		specialization: "Тренажерний зал",
-		category: "інструктор",
+		specialization: "gym",
+		category: "instructor",
 		experience: "1 рік",
 		description:
 			"Сергій фокусується на роботі з фітнесом та кардіотренуваннями. Він вдосконалив свої методики протягом багатьох років. Його учні завжди в формі та енергійні.",
@@ -55,8 +55,8 @@ const DATA = [
 		"first name": "Олена",
 		"last name": "Лисенко",
 		photo: "./img/trainers/trainer-f3.jpg",
-		specialization: "Басейн",
-		category: "спеціаліст",
+		specialization: "swimming pool",
+		category: "specialist",
 		experience: "4 роки",
 		description:
 			"Олена спеціалізується на синхронному плаванні. Вона тренує команди різного рівня. Її команди завжди займають призові місця на змаганнях.",
@@ -65,8 +65,8 @@ const DATA = [
 		"first name": "Андрій",
 		"last name": "Волков",
 		photo: "./img/trainers/trainer-m4.jpg",
-		specialization: "Бійцівський клуб",
-		category: "інструктор",
+		specialization: "fight club",
+		category: "instructor",
 		experience: "1 рік",
 		description:
 			"Андрій має досвід у вивченні різних бойових мистецтв. Він викладає техніку та тактику бою. Його учні здобувають перемоги на міжнародних турнірах.",
@@ -75,8 +75,8 @@ const DATA = [
 		"first name": "Наталія",
 		"last name": "Романенко",
 		photo: "./img/trainers/trainer-f4.jpg",
-		specialization: "Дитячий клуб",
-		category: "спеціаліст",
+		specialization: "kids club",
+		category: "specialist",
 		experience: "3 роки",
 		description:
 			"Наталія розробила унікальну програму для дітей дошкільного віку. Вона допомагає дітям розвивати фізичні та ментальні навички. Її класи завжди веселі та динамічні.",
@@ -85,8 +85,8 @@ const DATA = [
 		"first name": "Віталій",
 		"last name": "Козлов",
 		photo: "./img/trainers/trainer-m5.jpg",
-		specialization: "Тренажерний зал",
-		category: "майстер",
+		specialization: "gym",
+		category: "master",
 		experience: "10 років",
 		description:
 			"Віталій спеціалізується на функціональному тренуванні. Він розробив ряд ефективних тренувальних програм. Його клієнти швидко досягають бажаних результатів.",
@@ -95,8 +95,8 @@ const DATA = [
 		"first name": "Юлія",
 		"last name": "Кравченко",
 		photo: "./img/trainers/trainer-f5.jpg",
-		specialization: "Басейн",
-		category: "спеціаліст",
+		specialization: "swimming pool",
+		category: "specialist",
 		experience: "4 роки",
 		description:
 			"Юлія є експертом у водних видах спорту. Вона проводить тренування з аквагімнастики та аеробіки. Її учні демонструють вражаючі показники на змаганнях.",
@@ -105,7 +105,7 @@ const DATA = [
 		"first name": "Олег",
 		"last name": "Мельник",
 		photo: "./img/trainers/trainer-m6.jpg",
-		specialization: "Бійцівський клуб",
+		specialization: "fight club",
 		category: "майстер",
 		experience: "12 років",
 		description:
@@ -115,8 +115,8 @@ const DATA = [
 		"first name": "Лідія",
 		"last name": "Попова",
 		photo: "./img/trainers/trainer-f6.jpg",
-		specialization: "Дитячий клуб",
-		category: "інструктор",
+		specialization: "kids club",
+		category: "instructor",
 		experience: "1 рік",
 		description:
 			"Лідія має великий досвід у роботі з дітьми. Вона організовує різноманітні спортивні ігри та заняття. Її класи завжди допомагають дітям розвивати соціальні навички та командний дух.",
@@ -125,8 +125,8 @@ const DATA = [
 		"first name": "Роман",
 		"last name": "Семенов",
 		photo: "./img/trainers/trainer-m7.jpg",
-		specialization: "Тренажерний зал",
-		category: "спеціаліст",
+		specialization: "gym",
+		category: "specialist",
 		experience: "2 роки",
 		description:
 			"Роман є експертом у кросфіту та функціональних тренуваннях. Він розробив власні програми для різних вікових груп. Його учні часто отримують нагороди на фітнес-турнірах.",
@@ -135,8 +135,8 @@ const DATA = [
 		"first name": "Анастасія",
 		"last name": "Гончарова",
 		photo: "./img/trainers/trainer-f7.jpg",
-		specialization: "Басейн",
-		category: "інструктор",
+		specialization: "swimming pool",
+		category: "instructor",
 		experience: "1 рік",
 		description:
 			"Анастасія фокусується на водних програмах для здоров'я та фітнесу. Вона проводить тренування для осіб з різним рівнем підготовки. Її учні відзначають покращення здоров'я та благополуччя після занять.",
@@ -145,8 +145,8 @@ const DATA = [
 		"first name": "Валентин",
 		"last name": "Ткаченко",
 		photo: "./img/trainers/trainer-m8.jpg",
-		specialization: "Бійцівський клуб",
-		category: "спеціаліст",
+		specialization: "fight club",
+		category: "specialist",
 		experience: "2 роки",
 		description:
 			"Валентин є експертом в таеквондо та кікбоксингу. Він викладає техніку, тактику та стратегію бою. Його учні часто стають чемпіонами на національних та міжнародних змаганнях.",
@@ -155,8 +155,8 @@ const DATA = [
 		"first name": "Лариса",
 		"last name": "Петренко",
 		photo: "./img/trainers/trainer-f8.jpg",
-		specialization: "Дитячий клуб",
-		category: "майстер",
+		specialization: "kids club",
+		category: "master",
 		experience: "7 років",
 		description:
 			"Лариса розробила комплексну програму для розвитку фізичних та інтелектуальних навичок дітей. Вона проводить заняття в ігровій формі. Її методика допомагає дітям стати активними та розумними.",
@@ -165,8 +165,8 @@ const DATA = [
 		"first name": "Олексій",
 		"last name": "Петров",
 		photo: "./img/trainers/trainer-m9.jpg",
-		specialization: "Басейн",
-		category: "майстер",
+		specialization: "swimming pool",
+		category: "master",
 		experience: "11 років",
 		description:
 			"Олексій має багаторічний досвід роботи з плавцями. Він займається якісною підготовкою спортсменів на міжнародних змаганнях. Його методика базується на новітніх технологіях тренувань.",
@@ -175,8 +175,8 @@ const DATA = [
 		"first name": "Марина",
 		"last name": "Іванова",
 		photo: "./img/trainers/trainer-f9.jpg",
-		specialization: "Тренажерний зал",
-		category: "спеціаліст",
+		specialization: "gym",
+		category: "specialist",
 		experience: "2 роки",
 		description:
 			"Марина спеціалізується на роботі з ваговими тренажерами. Вона розробила унікальну програму для набору м'язової маси. Її клієнти завжди задоволені результатами.",
@@ -185,8 +185,8 @@ const DATA = [
 		"first name": "Ігор",
 		"last name": "Сидоренко",
 		photo: "./img/trainers/trainer-m10.jpg",
-		specialization: "Дитячий клуб",
-		category: "інструктор",
+		specialization: "kids club",
+		category: "instructor",
 		experience: "1 рік",
 		description:
 			"Ігор працює з дітьми різного віку. Він створив ігрові методики для розвитку координації та спритності. Його уроки завжди цікаві та корисні для малюків.",
@@ -195,8 +195,8 @@ const DATA = [
 		"first name": "Наталія",
 		"last name": "Бондаренко",
 		photo: "./img/trainers/trainer-f10.jpg",
-		specialization: "Бійцівський клуб",
-		category: "майстер",
+		specialization: "fight club",
+		category: "master",
 		experience: "8 років",
 		description:
 			"Наталія є майстром у бойових мистецтвах. Вона вивчала різні техніки та стили, із якими працює зі своїми учнями. Її підхід до навчання відповідає найвищим стандартам.",
@@ -205,8 +205,8 @@ const DATA = [
 		"first name": "Андрій",
 		"last name": "Семенов",
 		photo: "./img/trainers/trainer-m11.jpg",
-		specialization: "Тренажерний зал",
-		category: "інструктор",
+		specialization: "gym",
+		category: "instructor",
 		experience: "1 рік",
 		description:
 			"Андрій спеціалізується на функціональному тренуванні. Він розробив власну систему вправ для зміцнення корпусу. Його учні завжди отримують видимі результати.",
@@ -215,8 +215,8 @@ const DATA = [
 		"first name": "Софія",
 		"last name": "Мельник",
 		photo: "./img/trainers/trainer-f11.jpg",
-		specialization: "Басейн",
-		category: "спеціаліст",
+		specialization: "swimming pool",
+		category: "specialist",
 		experience: "6 років",
 		description:
 			"Софія працює з аквагімнастикою. Вона вивчила різні техніки та стили плавання. Її заняття допомагають клієнтам розслабитися та покращити фізичну форму.",
@@ -225,8 +225,8 @@ const DATA = [
 		"first name": "Дмитро",
 		"last name": "Ковальчук",
 		photo: "./img/trainers/trainer-m12.png",
-		specialization: "Дитячий клуб",
-		category: "майстер",
+		specialization: "kids club",
+		category: "master",
 		experience: "10 років",
 		description:
 			"Дмитро спеціалізується на розвитку дитячого спорту. Він розробив унікальну програму для малюків. Його методики забезпечують гармонійний розвиток дітей.",
@@ -235,8 +235,8 @@ const DATA = [
 		"first name": "Олена",
 		"last name": "Ткаченко",
 		photo: "./img/trainers/trainer-f12.jpg",
-		specialization: "Бійцівський клуб",
-		category: "спеціаліст",
+		specialization: "fight club",
+		category: "specialist",
 		experience: "5 років",
 		description:
 			"Олена є відомим тренером у жіночому бойовому клубі. Вона вивчила різні техніки самооборони. Її підхід дозволяє її ученицям відчувати себе впевнено в будь-яких ситуаціях.",
@@ -244,11 +244,17 @@ const DATA = [
 ];
 
 
+//ВИВІД ІНФОРМАЦІЇ НА СТОРІНКУ ТА МОДАЛЬНЕ ВІКНО
+
 
 document.addEventListener("DOMContentLoaded", function () {
-	const modalTemplate = document.getElementById("modal-template");
+	
+
 	const trainerCardTemplate = document.getElementById("trainer-card");
 	const trainersContainer = document.querySelector(".trainers-cards__container");
+	const sortingButtons = document.querySelectorAll('.sorting__btn');
+    const filters = document.querySelectorAll('.filters__input');
+
   
 	function displayTrainers(trainers) {
 	  trainersContainer.innerHTML = "";
@@ -287,8 +293,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		  modal.remove();
 		  document.body.classList.remove('modal-open');
 	  });
-
-	  
 	}
 
 
@@ -303,14 +307,70 @@ document.addEventListener("DOMContentLoaded", function () {
 		sidebarBlock.removeAttribute('hidden');
 	}
 
+
+   // Сортування
+   function displaySortedTrainers(sortFunction) {
+	trainersContainer.innerHTML = '';
+	const sortedTrainers = [...DATA].sort(sortFunction);
+		displayTrainers(sortedTrainers);
+	}
+
+
+	// Фільтрація за категорією
+	function filterByCategory(filterData, category) {
+		if (category === 'all') {
+		return filterData;
+		}
+		
+		return filterData.filter(trainer => trainer.category === category);
+	}
+
+	// Фільтрація за напрямом
+	function filterBySpecialization(filterData, specialization) {
+		if (specialization === 'all') {
+		return filterData;
+		}
+		
+		return filterData.filter(trainer => trainer.specialization === specialization);
+	}
+
+filters.forEach(filter => {
+		filter.addEventListener('change', () => {
+			const specialization = document.querySelector('.filters__input[name="direction"]:checked').value;
+			const category = document.querySelector('.filters__input[name="category"]:checked').value;
+		
+			let filterData = DATA;
+		
+			filterData = filterByCategory(filterData, category);
+			filterData = filterBySpecialization(filterData, specialization);
+		
+			
+			displayTrainers(filterData);
+		  
+		});
+		
+	  });
+	  
+
+	// Додавання обробників подій для кнопок сортування
+	sortingButtons.forEach(button => {
+		
+		button.addEventListener('click', () => {
+			sortingButtons.forEach(btn => btn.classList.remove('sorting__btn--active'));
+			button.classList.add('sorting__btn--active');
+
+			if (button.textContent.includes('ПРІЗВИЩЕМ')) {
+				displaySortedTrainers((a, b) => a['last name'].localeCompare(b['last name']));
+			} else if (button.textContent.includes('ДОСВІДОМ')) {
+				displaySortedTrainers((a, b) => parseInt(b.experience) - parseInt(a.experience));
+			}
+		});
+	});
+
+	
 	displayTrainers(DATA);
-  });
+});
 
-
-
-
-
-// console.log(trainerCard);
 
 
 
